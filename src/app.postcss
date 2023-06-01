@@ -2,3 +2,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+@layer utilities {
+  .collection-selection-box > div {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .collection-selection-box > div > div {
+    @apply mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32;
+  }
+
+  .collection-selection-box > div > div h2 {
+    @apply text-2xl font-bold text-gray-900;
+  }
+
+  .collection-selection-box > div > div > div {
+    @apply mt-6 mb-12 grid gap-x-6 space-y-0;
+  }
+
+  .collection-selection-box > div > div > div > div.group {
+    @apply relative;
+  }
+
+  .collection-selection-box > div > div > div > div > div > img{
+    @apply h-full w-full object-cover object-center ;
+  }
+
+  .collection-selection-box > div > div > div > div > div > h3{
+    @apply mt-6 text-sm text-gray-500;
+  }
+
+  .collection-selection-box > div > div > div > div > div > p{
+    @apply text-base font-bold text-gray-900;
+  }
+}

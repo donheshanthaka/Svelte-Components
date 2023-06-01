@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config}*/
-const config = {
-    content: ['./src/**/*.{html,js,svelte,ts}'],
-
+module.exports = {
+    mode: "jit",
+    purge: ["./src/**/*.svelte"],
     theme: {
-        extend: {}
+        extend: {
+            aspectRatio: {
+                'h-1': '1',
+                'w-1': '1',
+                'w-2': '2',
+            },
+        },
     },
-
-    plugins: []
+    plugins: [
+        // require('@tailwindcss/aspect-ratio'),
+    ],
 };
 
-module.exports = config;
