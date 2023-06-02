@@ -7,6 +7,7 @@
 <div class="flex flex-col min-h-screen bg-gray-100">
     <Navbar/>
     <div class="flex-grow">
+        <!--add flex items-center justify-center to above-->
         <slot />
     </div>
     <Footer/>
@@ -17,3 +18,4 @@
         height: 100%;
     }
 </style>
+
