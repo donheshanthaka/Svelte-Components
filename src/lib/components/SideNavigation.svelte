@@ -2,10 +2,9 @@
     export let categories;
     export let label;
     let isHidden = false;
-    export let primaryColor,
-        secondaryColor,
+    export let hoverMenuColor,
         headingTextColor,
-        primaryTextColor,
+        hoverMenuTextColor,
         secondaryTextColor,
         backgroundColor,
         iconColor;
@@ -36,9 +35,9 @@
         </div>
         <ul class={ulTag}>
             {#each categories as category}
-                <li class="hover:{primaryColor}">
+                <li class={hoverMenuColor}>
                     <a href="#"
-                       class='{aTag} {secondaryTextColor} hover:{primaryTextColor}'>
+                       class='{aTag} {secondaryTextColor} {hoverMenuTextColor}'>
                         <span class="{categoryStyle} {iconColor}"><i
                                 class="{category.icon}"></i></span>
                         <span class={isHidden ? "hidden" : "text-sm font-medium"}>{category.name}</span>

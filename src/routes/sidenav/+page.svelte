@@ -36,10 +36,9 @@
     const label = 'label';
 
     const CustomStyles = {
-            primaryColor: 'bg-indigo-100',
-            secondaryColor: '',
+            hoverMenuColor: 'hover:bg-indigo-100',
             headingTextColor: 'text-indigo-500',
-            primaryTextColor: 'text-gray-800',
+            hoverMenuTextColor: 'hover:text-gray-800',
             secondaryTextColor: 'text-gray-500',
             backgroundColor: 'bg-white',
             iconColor: 'text-gray-400'
