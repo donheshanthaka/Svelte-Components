@@ -1,5 +1,6 @@
 <script>
     import SideNavigation from "$lib/components/SideNavigation.svelte";
+    import {sideNavigationStyles} from "$lib/styles/sideNavigationStyles.js";
 
     const categories = [
         {
@@ -32,9 +33,9 @@
         },
     ]
 
-    const name = 'name';
+    const label = 'label';
 
-    const styles = {
+    const CustomStyles = {
             primaryColor: 'bg-indigo-100',
             secondaryColor: '',
             headingTextColor: 'text-indigo-500',
@@ -46,4 +47,4 @@
 
 </script>
 
-<SideNavigation {categories} {name} {styles}/>
+<SideNavigation {categories} {label} {...CustomStyles} {...sideNavigationStyles}/>
