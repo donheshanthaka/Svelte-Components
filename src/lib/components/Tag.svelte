@@ -12,7 +12,7 @@
 
 <div
         class="{container}
-                {labelSize ? labelSize : 'text-xs '}
+                {labelSize ? labelSize : 'text-1xl '}
                 {width ? width : 'px-3'}
                 {height ? height : 'py-1'}
                 {color ? color : 'bg-blue-200'}
