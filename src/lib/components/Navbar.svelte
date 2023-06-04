@@ -41,6 +41,7 @@
                         <a href="/radiobutton" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Radio Button</a>
                         <a href="/accordion" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Accordion</a>
                         <a href="/autocomplete" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Autocomplete</a>
+                        <a href="/slider" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Slider</a>
                     </div>
                 </div>
             </div>
