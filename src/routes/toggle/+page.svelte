@@ -17,7 +17,7 @@
 
 </script>
 
-<div class="mx-10 my-10">
+<div class="flex justify-center items-center h-full mt-60">
     <Toggle {...toggleCustomStyles} {...toggleStyles} {captureToggle}>
         <slot >
             <span class="ml-3 text-sm font-medium {textColor}">

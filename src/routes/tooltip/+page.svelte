@@ -17,10 +17,11 @@
     }
 </script>
 
-
-<div class="mt-10 mx-10 flex flex-col gap-12">
-    <Tooltip toolTipData={topToolTipData}></Tooltip>
-    <Tooltip toolTipData={rightToolTipData}></Tooltip>
+<div class="flex justify-center items-center h-full mt-60">
+    <div class="mt-10 mx-10 flex flex-col gap-12">
+        <Tooltip toolTipData={topToolTipData}></Tooltip>
+        <Tooltip toolTipData={rightToolTipData}></Tooltip>
+    </div>
 </div>
 
 
