@@ -1,11 +1,23 @@
 <script>
-    export let toggleData;
+    export let toggleColor, focusRingColor;
+    export let labelStyle,
+        toggleInputStyle,
+        toggleBox;
+
+    let isToggleActive = false
+    export let captureToggle
+
+    function handleToggle() {
+        isToggleActive = !isToggleActive
+        captureToggle(isToggleActive)
+    }
+
 </script>
 
-<label>
-    <input type="checkbox" value="" class="sr-only peer">
+<label class="relative inline-flex items-center cursor-pointer">
+    <input type="checkbox" value="" class="sr-only peer" on:change={handleToggle}>
     <div class="peer-focus:outline-none peer-focus:ring-4 dark:peer-focus:ring-indigo-800 peer-checked:after:translate-x-full
-     peer-checked:after:border-white peer-focus:ring-{toggleData.focusRingColor} peer-checked:{toggleData.toggleColor}"></div>
+     peer-checked:after:border-white {focusRingColor} {toggleColor}"></div>
     <slot></slot>
 </label>
 
